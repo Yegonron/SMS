@@ -1,0 +1,290 @@
+{% extends 'root.html' %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'home.css')}}">
+    <title>Sports page</title>
+
+{% endblock %}
+
+{% block body %}
+
+<div id="container">
+	<div id="header">
+    	<h1><a href="/">UNIVERSITY</a></h1>
+        <h2>sports</h2>
+        <div class="clear"></div>
+    </div>
+    <div id="nav">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="#sport_teams">Sport Teams</a></li>
+            <li><a href="login.html">Player-SMS</a></li>
+            <li><a href="#news_and_activities">News and Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="body">
+		<div id="content">
+			<h2>Games and sports</h2>
+
+            <p>Sport is generally recognised as system of activities based in physical athleticism or physical dexterity,
+                with major competitions such as the Olympic Games admitting only sports meeting this definition.
+                Other organisations, such as the Council of Europe, preclude activities without a physical element from 
+                classification as sports.However, a number of competitive, but non-physical, activities claim recognition 
+                as mind sports. The International Olympic Committee (through ARISF) recognises both chess and bridge as bona fide sports,
+                and SportAccord, the international sports federation association, recognises five non-physical sports: bridge, chess, draughts (checkers),
+                Go and xiangqi,and limits the number of mind games which can be admitted as sports.
+                Sport is usually governed by a set of rules or customs, which serve to ensure fair competition, and allow consistent adjudication of the winner.
+                Winning can be determined by physical events such as scoring goals or crossing a line first. It can also be determined by judges who are scoring
+                elements of the sporting performance, including objective or subjective measures such as technical performance or artistic impression.
+        
+            </p>
+    
+<!--Sports teams section-->
+<section class="sportteamssection" id="sport_teams">        
+	<h2 class="sectitle-sectitle_intro">Sport Teams</h2>
+
+    <div class="row">
+		<div class="teams"> 
+             <h3>Rugby</h3>
+             <p>Rugby is a close-contact team sport that originated in England in the first half of the 19th century.
+               One runs with the ball in hand. In its most common form, a game is played between two teams of 15 players each,
+               using an oval-shaped ball on a rectangular field called a pitch. The field has H-shaped goalposts at both ends.
+               It is a popular sport around the world. </p>
+
+               <h4>2021/2022 League Standing</h4>
+
+               <table cellspacing="0">
+                   <tr>
+                       <th>ID</th>
+                       <th>Team Name</th>
+                       <th>points</th>
+                   </tr>
+                   <tr>
+                       <td>1</td>
+                       <td>Strath</td>
+                       <td>40</td>
+                   </tr>
+                   <tr>
+                       <td>2</td>
+                       <td>UON</td>
+                       <td>38</td>
+                   </tr>
+                   <tr>
+                       <td>3</td>
+                       <td>KU</td>
+                       <td>20</td>
+                   </tr>
+   
+               </table>
+
+            <img src="img1.jpg" alt="rugby team" class="img">
+            <img src="img2.jpg" alt="rugby team" class="img">
+  
+        </div>
+        <div class="teams">
+            <h3>Football</h3>
+            <p>Football or soccer, is a team sport played with a spherical ball between two teams of 11. Its the world's most popular sport.
+               The game is played on a rectangular field called a pitch with a goal at each end. The object of the game is to score more goals 
+               than the opposition by moving the ball beyond the goal line into the opposing goal, usually within a time frame of 90 or more minutes.
+            </p>
+
+            <h4>2021/2022 League Standing</h4>
+
+            <table cellspacing="0">
+                <tr>
+                    <th>ID</th>
+                    <th>Team Name</th>
+                    <th>points</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Strath</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>UON</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>KU</td>
+                    <td>10</td>
+                </tr>
+
+            </table>
+        	 <img src="img3.jpg" alt="football team" class="img">
+             <img src="img4.jpg" alt="football team" class="img">
+        	 
+        </div>
+        <div class="teams">
+            <h3>Basketball</h3>
+            <p>Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court,
+               compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's 
+               hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court) while preventing
+               the opposing team from shooting through their own hoop.
+               A field goal is worth two points, unless made from behind the three-point line, when it is worth three.
+               After a foul, timed play stops and the player fouled or designated to shoot a technical foul is given one, two or three one-point free throws.
+               The team with the most points at the end of the game wins, but if regulation play expires with the score tied, an additional period of play (overtime) is mandated.
+               Players advance the ball by bouncing it while walking or running (dribbling) or by passing it to a teammate, both of which require considerable skill.</p>
+              
+               <h4>2021/2022 League Standing</h4>
+
+               <table cellspacing="0">
+                   <tr>
+                       <th>ID</th>
+                       <th>Team Name</th>
+                       <th>points</th>
+                   </tr>
+                   <tr>
+                       <td>1</td>
+                       <td>Strath</td>
+                       <td>67</td>
+                   </tr>
+                   <tr>
+                       <td>2</td>
+                       <td>UON</td>
+                       <td>55</td>
+                   </tr>
+                   <tr>
+                       <td>3</td>
+                       <td>KU</td>
+                       <td>40</td>
+                   </tr>
+   
+               </table>
+               <img src="img5.jpg" alt="basketball team" class="img">
+              <img src="img6.jpg" alt="basketball team" class="img">
+
+        </div>
+    </div>
+        	  
+</section>
+
+<!--news and activities section-->
+<section class="news_and_activitiessection" id="news_and_activities">
+	<h2 class="sectitle-sectitle_intro">News and Activities</h2>
+	<img src="images.jpg" width="350" height="350" alt="top_image" class="first_img">
+    <img src="images.jpg" width="350" height="350" alt="top_image" class="second_img">
+    <img src="images.jpg" width="350" height="350" alt="top_image" class="third_img">
+
+
+</section>
+        
+</div>     
+        <div class="sidebar">
+            <ul>	
+               <li>
+                    <h4><span>Navigate</span></h4>
+                    <ul class="blocklist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#sport_teams">Sports Teams</a></li>
+                        <li><a href="login.html">Player-SMS</a></li>
+                        <li><a href="#news_and_activities">News and Activities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>About US</h4>
+                 
+                      <!--About US section-->
+                    <section class="AboutUSsection" id="about_US">
+    
+                        <div class="row1">
+                           <div class="column1">
+                              <div class="card">
+                                <img src="image1.jpg"alt="image" class="img" >
+                                <div class="container2">
+                                <h5>Yegon Ronald</h5>
+                                <p class="title">HOD</p>
+                                <p>yegon.ronald@gmail.com</p>
+                             </div>
+                          </div>
+                       </div>
+  
+                      <div class="row1"> 
+                        <div class="column1">
+                           <div class="card">
+                              <img src="image2.jpg"alt="image" class="img" >
+                              <div class="container2">
+                              <h5>Lucas Sitati</h5>
+                              <p class="title">Head coach</p>
+                              <p>lucas.wanjala@gmail.com</p>
+                          </div>
+                         </div>
+                      </div>
+
+                      <div class="row1">
+                        <div class="column1">
+                          <div class="card">
+                            <img src="image3.jpg"alt="image" class="img" >
+                            <div class="container2">
+                            <h5>Eve Wangari</h5>
+                            <p class="title">Secretary</p>
+                            <p>eve.wangari@gmail.com</p>
+                         </div>
+                        </div>
+                     </div>
+
+                    </section>     
+
+                </li>
+               
+                <li>
+                    <h4>Sponsors</h4>
+                    <ul>
+                        <li><a href="#" title="sponsor"><strong>Sponser 1</strong></a> - Provide technical guidance and leadership</li>
+                        <li><a href="#" title="sponsor"><strong>Sponser 2</strong></a> - Establishes and governs performance standards</li>
+                        <li><a href="#" title="sponsor"><strong>Sponser 3</strong></a> - Provides sponsorship and financial support</li>
+                    </ul>
+                </li>
+                
+            </ul> 
+        </div>
+        
+    	<div class="clear"></div>
+    </div>
+
+    <div id="footer">
+
+        <div>
+            <footer class="footer" id="contact">
+                <h3>Contact US</h3>
+
+                <p style="color: white;">We'd love to hear from you:<a class="socialitemlink" href="mailto:sportsuniversitymail@gmail.com" class="footer_link">Email Us Here</a></p>
+            
+                <p>You can also find us on social media</p>
+
+                <div class="stickyicon-list">  
+                
+                <a href="#facebook" class="facebook">   
+                <i class="fa fa-facebook"></i>   
+                </a>   
+                
+                <a href="#twitter" class="twitter">   
+                <i class="fa fa-twitter"></i>   
+                </a>      
+                
+                <a href="#instagram" class="instagram">   
+                <i class="fa fa-instagram"></i>   
+                </a>      
+                
+                </div>   
+
+            </footer>
+
+        </div>
+
+        <div class="footer-content">
+			<p style="color: white;">&copy; University SportsWebsite 2021. Design by <a href="#">LUCAS & YEGON</a></p>
+		</div>
+
+    </div>
+
+</div>
+
+{% endblock %}

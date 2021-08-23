@@ -1,0 +1,78 @@
+{% extends 'root.html' %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'coach.css')}}">
+    <script defer src="myScript.js"></script>
+    <title>Coach page</title>
+
+{% endblock %}
+
+{% block body %}    
+
+
+    <div id="container">
+        <div id="header">
+            <h1><a href="/">UNIVERSITY</a></h1>
+            <h2>Coach</h2>
+            <div class="clear"></div>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register_new_player">Register New Player</a></li>
+                <li><a href="#game_details">Game Details</a></li>
+                <li><a href="home.html">Logout</a></li>
+            </ul>
+        </div>
+    
+       <!--register player section-->
+       
+       <div id="register_new_player">
+        <div id="content">
+
+            <main id="main-holder"></main>
+            <h2 style="text-align: center;">Register</h2>
+
+            <div id="register-error-msg-holder">
+                <p id="register-error-msg">Account is <span id="error-msg-second-line">already registered</span></p>
+             </div>
+    
+            <form name="register_form" id="register-form" method="POST">
+                <input type="text" name="username" id="username-field" class="register-form-field" placeholder="Player Email">
+                <input type="password" name="password" id="password-field" class="register-form-field" placeholder="Password">
+                <input type="submit" value="Register" id="register-form-submit">
+                <!--the register button should send details to players on their emails-->
+
+            </form>  
+
+            </main>
+
+      </div>
+      </div>
+    
+        <!--Game details section-->
+          
+        <div id="game_details">
+            <div id="content">
+                <h2 style="text-align: center;">Game Details</h2>
+    
+
+         
+             </div>
+    
+        </div>   
+    
+          <!--footer-->
+          <footer id="footer">
+    
+            <div class="footer-content">
+              <p style="color: white;">&copy; University SportsWebsite 2021. Design by <a href="#">LUCAS & YEGON</a></p>
+            </div>
+          
+          </footer>
+        </div>
+        
+    </div>
+
+{% endblock %}

@@ -1,0 +1,191 @@
+/* coach webpage */
+body {
+    background-color: #000000;
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+  }
+  * {
+    margin:0;
+    padding:0;
+  }
+  #container {
+    width: 970px;
+    margin:0 auto;
+    padding: 0;
+  }
+  #header {
+    padding: 0;
+    margin: 0 auto;
+    height: 110px;
+  }
+  #header h1  {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  #header h1 a {
+    font-family: "Impact", Arial, Helvetica, sans-serif;
+    color: #eee;
+    font-size: 45px;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: -1px;
+    float: left;
+    text-transform:uppercase;
+  }
+  #header h2 {
+    color: #ffffff;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-left: 12px;
+    margin-top: 28px;
+    padding-left: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+  #nav {
+    background: #fff;
+    height: 50px;
+    width: 970px;
+    /*center or not*/
+  }
+  #nav ul {
+    list-style: none;
+    padding: 0 5px;
+    margin: 0;
+    height: 50px;
+  }
+  #nav ul li {
+    float: left;
+    display: block;
+    padding:0;
+  }
+  #nav ul li.float_right {
+    float: right;
+    display: block;
+    padding:0;
+  }
+  #nav ul li a {
+    color: #B6A7C3;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 19px 15px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #nav ul li a:hover {
+    text-decoration: underline;
+  }
+  #nav ul li a.selected {
+    color: #fff;
+  }
+  #nav ul li a.selected:hover {
+    text-decoration: none;
+  }
+  #register_new_player{
+    background: transparent none repeat-y scroll 0 0;
+    margin:25px auto 0;
+    padding: 15px;
+    width: 930px;
+    height:auto;
+    min-height: 250px;
+
+  }
+  #content {
+    float: left;
+    width: 750px;
+    margin: 0;
+  } 
+   #main-holder {
+    width: 50%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;
+    margin-top:0;
+  }
+
+  #register-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  #register-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color:brown;
+    border: 1px solid brown;
+    background-color:rgb(207, 130, 130);
+    opacity: 0;
+  }
+  #error-msg-second-line {
+    display: block;
+  }
+  #register-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .register-form-field::placeholder {
+    color: #3a3a3a;
+  }
+  .register-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+  #register-form-submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /*footer */
+  
+  #footer {
+    width: 960px;
+    margin:0 auto;
+}
+.footer-content {
+    background: #000;
+    padding: 20px 5px;
+}
+#footer p {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#footer p a {
+    color: #999;
+    font-weight: bold;
+}
+
+
+  /* Coach-Register page*/
+

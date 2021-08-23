@@ -1,0 +1,196 @@
+{% extends 'root.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'player.css')}}">
+<title>Player page</title>
+
+{% endblock %}
+
+{% block body %}
+  
+<div id="container">
+	<div id="header">
+    	<h1><a href="/">Player</a></h1>
+        <h2>-SMS</h2>
+        <div class="clear"></div>
+    </div>
+    <div id="nav">
+    	<ul>
+        	<li><a href="#home">Home</a></li>
+            <li><a href="#my_details">My Details</a></li>
+            <li><a href="#medical_report">Medical Report</a></li>
+            <li><a href="home.html">Log out</a></li>
+        </ul>
+    </div>
+
+<!--Home section-->
+    <div id="home">
+        <div id="content">
+
+            <table>
+                <tr>
+                    <th> surname </th>
+                    <th> firstname </th>
+                    <th> lastname </th>
+                    <th>  gender  </th>
+                    <th> phoneno </th>
+                    <th> age </th>
+                    <th> sport </th>
+                    <th> position </th>
+                    <th>bootsize</th>
+                    <th>kitsize</th>
+                    <th> photo</th>
+                </tr>
+                {% for i in entries %}
+                <tr>
+                    <td> {{i.surname }} </td>
+                    <td> {{i.firstname }} </td>
+                    <td> {{i.lastname }} </td>
+                    <td> {{i.gender }} </td>
+                    <td> {{i.phoneno }} </td>
+                    <td> {{i.age }} </td>
+                    <td> {{i.sport }} </td>
+                    <td> {{i.position }} </td>
+                    <td> {{i.bootsize }} </td>
+                    <td> {{i.kitsize }} </td>
+                    <td> {{i.photo }} </td>
+                    <td>
+                        <a href="">Modify</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+
+<!--My Details section-->
+    <div id="my_details">
+		<div id="content">
+			<h2>My Details</h2>
+    
+    <div class="container">
+
+        <form name="playerDetails" action="/" method="POST">
+              <div class="row">
+                  <div class="col-25">
+                     <label for="surName">Surname</label>
+                 </div>
+                  <div class="col-75">
+                     <input type="text" id="surName" name="surName" placeholder="Surname...">
+                  </div>
+             </div>
+             <div class="row">
+                 <div class="col-25">
+                    <label for="firstName">First Name</label>
+                 </div>
+                 <div class="col-75">
+                    <input type="text" id="firstName" name="firstName" placeholder="first name...">
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-25">
+                   <label for="lastName">Last Name</label>
+                </div>
+                <div class="col-75">
+                   <input type="text" id="lastName" name="lastName" placeholder="last name...">
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                   <label for="gender">Gender</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="gender" name="gender" placeholder="gender...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                   <label for="phoneNo">Phone No</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="phoneNo" name="phoneNo" placeholder="phone number...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                   <label for="age">Age</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="age" name="age" placeholder="age...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                   <label for="sport">Sport</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="sport" name="sport" placeholder="sport...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                   <label for="position">Position</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="position" name="position" placeholder="position...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                   <label for="bootSize">Boot Size</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="bootSize" name="bootSize" placeholder="bootSize...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                   <label for="kitSize">Kit Size</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="kitSize" name="kitSize" placeholder="kitSize...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                   <label for="photo">photo</label>
+                </div>
+                <div class="col-75">
+                    <input type="image" id="photo" name="photo" placeholder="photo...">
+                </div>
+            </div>
+             <div class="row">
+                 <input type="submit" value="Save">
+             </div>
+        </form>
+    </div>
+
+<!--Medical Reports section-->
+<section class="medicalReportSection" id="medical_report">
+    <h1 class="sectitle-sectitle_intro">Reports</h1>
+
+    <table cellspacing="0">
+      <tr>
+          <th>Doctor Name</th>
+          <th>Date</th>
+          <th>Description</th>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  
+  </table>
+  
+</section>
+
+  <!--footer-->
+  <footer id="footer">
+
+    <div class="footer-content">
+      <p style="color: white;">&copy; University SportsWebsite 2021. Design by <a href="#">LUCAS & YEGON</a></p>
+    </div>
+  
+  </footer>
+ 
+  {% endblock %}

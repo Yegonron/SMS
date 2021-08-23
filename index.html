@@ -1,0 +1,52 @@
+{% extends 'root.html' %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'index.css')}}">
+    <title>University website</title>
+
+{% endblock %}
+
+{% block body %}
+
+    <div id="container">
+        <div id="body">
+           <div id="content">
+            <section class="homesection" id="uniwebhome">
+                <h2 class="sectitle-sectitle_intro">Sports</h2>
+            
+                <p>
+                    Sport pertains to any form of competitive physical activity or game that aims to use,
+                    maintain or improve physical ability and skills while providing enjoyment to participants and,
+                    in some cases, entertainment to spectators.Sports can, through casual or organized participation,
+                    improve one's physical health. Hundreds of sports exist, from those between single contestants, 
+                    through to those with hundreds of simultaneous participants, either in teams or competing as individuals. 
+                    In certain sports such as racing, many contestants may compete, simultaneously or consecutively, with one winner;
+                    in others, the contest (a match) is between two sides, each attempting to exceed the other. Some sports allow a "tie" or "draw", 
+                    in which there is no single winner; others provide tie-breaking methods to ensure one winner and one loser. A number of contests 
+                    may be arranged in a tournament producing a champion. Many sports leagues make an annual champion by arranging games in a regular
+                    sports season, followed in some cases by playoffs. <br> <br>
+
+                  <a href="home.html">
+                    <button style="margin-left: 430px;">READ MORE</button>
+                  </a>
+            
+                </p>
+            </section>
+
+           </div>
+
+          </div>
+
+  <!--footer-->
+<footer id="footer">
+
+  <div class="footer-content">
+    <p style="color: white;">&copy; University SportsWebsite 2021. Design by <a href="#">LUCAS & YEGON</a></p>
+  </div>
+
+</footer>
+
+</div>
+
+{% endblock %}

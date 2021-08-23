@@ -1,0 +1,123 @@
+{% extends 'root.html' %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'clinic.css')}}">
+    <title>Clinic page</title>
+
+{% endblock %}
+
+{% block body %}
+
+<div id="container">
+	<div id="header">
+    	<h1><a href="/">UNIVERSITY</a></h1>
+        <h2>Clinic</h2>
+        <div class="clear"></div>
+    </div>
+    <div id="nav">
+    	<ul>
+        	<li><a href="#doc_details">Home</a></li>
+            <li><a href="#medical_report">Medical Report</a></li>
+            <li><a href="home.html">Logout</a></li>
+        </ul>
+    </div>
+
+   <!--home section-->
+   
+   <div id="doc_details">
+    <div id="content">
+        <h2 style="text-align: center;">My Details</h2>
+
+   <form name="clinic" action="/" method="POST">
+    <div class="row">
+        <div class="col-25">
+           <label for="surName">Surname</label>
+       </div>
+        <div class="col-75">
+           <input type="text" id="surName" name="surName" placeholder="Surname...">
+        </div>
+   </div>
+   <div class="row">
+       <div class="col-25">
+          <label for="firstName">First Name</label>
+       </div>
+       <div class="col-75">
+          <input type="text" id="firstName" name="firstName" placeholder="first name...">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-25">
+         <label for="lastName">Last Name</label>
+      </div>
+      <div class="col-75">
+         <input type="text" id="lastName" name="lastName" placeholder="last name...">
+     </div>
+  </div>
+
+  </form>
+  </div>
+  </div>
+
+
+    <!--medical report section-->
+      
+    <div id="medical_report">
+        <div id="content">
+            <h2 style="text-align: center;">Report</h2>
+
+     <form action="action_page.php">
+        <div class="row">
+            <div class="col-25">
+               <label for="docName">Doctor Name</label>
+           </div>
+            <div class="col-75">
+               <input type="text" id="docName" name="doctorName" placeholder="...">
+            </div>
+       </div>
+       <div class="row">
+           <div class="col-25">
+              <label for="studentName">Student Name</label>
+           </div>
+           <div class="col-75">
+              <input type="text" id="studentName" name="studentName" placeholder="Student name...">
+          </div>
+       </div>
+       <div class="row">
+        <div class="col-25">
+           <label for="date">Date</label>
+        </div>
+        <div class="col-75">
+           <input type="date" id="date" name="date" placeholder="Student name...">
+       </div>
+    </div>
+       <div class="row">
+           <div class="col-25">
+               <label for="description">Description</label>
+           </div>
+           <div class="col-75">
+                <textarea id="description" name="description" placeholder="Write Report..." style="height:200px"></textarea>
+           </div>
+       </div>
+       <div class="row">
+           <input type="submit" value="Submit">
+       </div>
+
+      </form>
+      </div>
+
+    </div>   
+
+      <!--footer-->
+      <footer id="footer">
+
+        <div class="footer-content">
+          <p style="color: white;">&copy; University SportsWebsite 2021. Design by <a href="#">LUCAS & YEGON</a></p>
+        </div>
+      
+      </footer>
+    </div>
+    
+</div>
+
+{% endblock %}
